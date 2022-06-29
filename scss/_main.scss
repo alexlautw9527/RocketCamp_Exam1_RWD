@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-h-center{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-v-center{
+    display: flex;
+    align-items: center;
+}
+
+.main-height-rwd{
+    height: 100vw;
+    @media (min-width: 992px) {
+        height: 50vw;
+    }
+}
+
+.bg-main {
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.fw-900{
+    font-weight: 900;
+}
+
+.fs-xl{
+    font-size: 64px;
+    @media (min-width: 768px) {
+        font-size: 80px 
+    }
+}
+
+.fs-lg{
+    font-size: 48px;
+    @media (min-width: 768px) {
+        font-size: 64px 
+    }
+}
+
+.w-384px{
+    width: 100%;
+    @media (min-width: 576px) {
+        width: 384px;
+        
+    }
+}
+
+.w-150{
+    width: 100%;
+    @media (min-width: 768px) {
+        width: 150%;
+    }
+}
+
+
+
+ul.about-list {
+    &>li{
+        display: flex;
+        margin-bottom: 16px;
+        &::before {
+        margin-right: 32px;
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        font-style: normal;
+        content: "\f111";
+        display: block;
+        color: #891818;
+        }
+    }
+    
+  }
